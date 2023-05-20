@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,19 +14,5 @@ use App\Http\Controllers\ProductsController;
 |
 */
 
-Route::get('/products', [ProductsController::class, 'index']);
-
-
-// // Pattern is integer
-// Route::get('/products/{id}', [ProductsController::class, 'show'])->where('id', '[0-9]+');
-
-
-// Pattern is integer
-Route::get('/products/{name}/{id}', [ProductsController::class, 'show'])->where([
-    'name' => '[a-z]+',
-    'id' => '[0-9]+'
-]);
-
-// /products = all products
-// /products/productName
-// /products/id
+Route::get('/', [PagesController::class, 'index']);
+Route::get('/about', [PagesController::class, 'about']);
