@@ -7,10 +7,6 @@
         Personal Website - Code With Dary
     </title>
     <link
-        rel="stylesheet"
-        href="style.css"
-    />
-    <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap"
         rel="stylesheet"
     />
@@ -18,11 +14,7 @@
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
     />
-    <style>
-        .active {
-            color: red;
-        }
-    </style>
+    @vite(['resources/css/app.css', 'resources/scss/app.scss', 'resources/js/app.js'])
 </head>
 
 <body>

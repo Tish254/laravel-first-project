@@ -2,7 +2,9 @@
 @extends('layouts.app')
 
 @section('content')
-    {{ print_r(URL('storage')) }}
+<h1 class="text-3xl text-red-500 underline">
+    Hello world!
+  </h1>
      <!-- Hero background & content on top of hero background -->
      <div id="hero-container">
         <div class="hero-wrapper">
