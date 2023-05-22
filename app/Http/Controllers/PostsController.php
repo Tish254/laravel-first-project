@@ -11,8 +11,8 @@ class PostsController extends Controller
     {
         $id = 7;
         $posts = DB::table('posts')
-            ->where('created_at', '>', now()->subDay())
-            ->get();
-        dd(now());
+        ->where('id', '=', 8)
+            ->delete();
+        dd($posts);
     }
 }
